@@ -1,1 +1,17 @@
-
+{
+  "name": "bot-jasseb-resming",
+  "version": "1.0.0",
+  "description": "Telegram Bot untuk jasa sebar pesan",
+  "main": "botresming.js",
+  "scripts": {
+    "start": "node botresming.js",
+    "dev": "node botresming.js",
+    "vercel-build": "echo 'No build required'"
+  },
+  "dependencies": {
+    "telegraf": "^4.12.2"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
