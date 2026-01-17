@@ -8,7 +8,7 @@ if (!fs.existsSync(dbDir)) {
   fs.mkdirSync(dbDir, { recursive: true });
 }
 
-const bot = new Telegraf(process.env.BOT_TOKEN || "8510810634:AAEt6jhRV00Bzxgcv4PlQNuvcu8dF1PBnFM");
+const bot = new Telegraf(process.env.BOT_TOKEN || "8592407821:AAGLS0NVlggw7S_3MVKAFqipQmah46fJGz4");
 
 // Path file database
 const blacklistFile = path.join(dbDir, "blacklist.json");
@@ -771,7 +771,7 @@ bot.command("delprem", ctx => {
 async function startBot() {
   try {
     // Cek apakah BOT_TOKEN tersedia
-    if (!process.env.BOT_TOKEN && !"8375757027:AAGgvDXIjkw6ZIhGLXwNW5R-0yYDJqtkKwk") {
+    if (!process.env.BOT_TOKEN && !"8592407821:AAGLS0NVlggw7S_3MVKAFqipQmah46fJGz4") {
       console.error("❌ BOT_TOKEN tidak ditemukan. Silakan set di Environment Variables.");
       return null;
     }
