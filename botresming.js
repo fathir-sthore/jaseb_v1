@@ -8,7 +8,7 @@ if (!fs.existsSync(dbDir)) {
   fs.mkdirSync(dbDir, { recursive: true });
 }
 
-const bot = new Telegraf(process.env.BOT_TOKEN || "8375757027:AAGgvDXIjkw6ZIhGLXwNW5R-0yYDJqtkKwk");
+const bot = new Telegraf(process.env.BOT_TOKEN || "8592407821:AAGLS0NVlggw7S_3MVKAFqipQmah46fJGz4");
 
 // Path file database
 const blacklistFile = path.join(dbDir, "blacklist.json");
@@ -137,9 +137,9 @@ bot.on("new_chat_members", async ctx => {
 });
 
 const randomImages = [
-  "https://files.catbox.moe/ihog4a.jpg",
-  "https://files.catbox.moe/ihog4a.jpg",
-  "https://files.catbox.moe/ihog4a.jpg"
+  "https://files.catbox.moe/c45jek.jpg",
+  "https://files.catbox.moe/cw3o8i.jpg",
+  "https://files.catbox.moe/uvegiv.jpg"
 ];
 
 const getRandomImage = () => randomImages[Math.floor(Math.random() * randomImages.length)];
@@ -214,8 +214,8 @@ bot.command('start', async (ctx) => {
 ╭─────( 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐒𝐈  )──────╮
 │✧ Developer : 𝗙𝗔𝗧𝗛𝗜𝗥 𝗦𝗧𝗛𝗢𝗥𝗘 
 │✧ Author : 𝗙𝗔𝗧𝗛𝗜𝗥 𝗦𝗧𝗛𝗢𝗥𝗘 
-│✧ Version : 2.0
-│✧ encourager : [all buyer, ortu,] 
+│✧ Version : 1.0
+│✧ encourager : [all buyer, ortu] 
 │✧ Deskripsi : ⤸ 
 │✧ Language 𝖩𝖤𝖯𝖠𝖭𝖦  🇯🇵
 │
@@ -245,10 +245,10 @@ bot.command('start', async (ctx) => {
     ...Markup.inlineKeyboard([
       [
         Markup.button.callback('𝙈𝙀𝙉𝙐 𝙐𝙏𝘼𝙈𝘼', 'Daxingnot1'),
-        Markup.button.callback('KHUSUS 𝗙𝗔𝗧𝗛𝗜𝗥 𝗦𝗧𝗛𝗢𝗥𝗘', 'fathirofsc2'),
+        Markup.button.callback('𝗞𝗛𝗨𝗦𝗨𝗦 𝗙𝗔𝗧𝗛𝗜𝗥 𝗦𝗧𝗛𝗢𝗥𝗘', 'fathirofsc2'),
       ],
       [
-        Markup.button.url('𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍', 'https://t.me/Wikiofficiall'),
+        Markup.button.url('𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍', 'https://t.me/fathirsthore'),
       ]
     ])
   }).catch(e => console.log("Gagal kirim start:", e.message));
@@ -283,7 +283,7 @@ bot.action('Daxingnot1', async (ctx) => {
 ▣ /del         ⇢  𝖧𝖺𝗉𝗎𝗌 𝖳𝖷𝖳 𝖽𝖺𝗋𝗂 𝖩𝖲𝖮𝖭
 ▣ /list        ⇢  𝖣𝖺𝖿𝗍𝖺𝗋 𝖳𝖷𝖳 𝖽𝖺𝗅𝖺𝗆 𝖩𝖲𝖮𝖭
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          『🦋』 𝘼𝙡𝙡 𝙃𝙚𝙥𝙥𝙮
+          『🦋』 𝘼𝙡𝙡 𝙃𝙚𝙥𝙥𝙮 𝙀𝙣𝙙𝙨
 </blockquote>
   `;
 
@@ -329,7 +329,7 @@ bot.action('startback', async (ctx) => {
       Markup.button.callback('𝗞𝗛𝗨𝗦𝗨𝗦 𝗙𝗔𝗧𝗛𝗜𝗥 𝗦𝗧𝗛𝗢𝗥𝗘', 'fathirofsc2'),
     ],
     [
-      Markup.button.url('𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍', 'https://t.me/Wikiofficiall'),
+      Markup.button.url('𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍', 'https://t.me/fathirsthore'),
     ]
   ]);
 
